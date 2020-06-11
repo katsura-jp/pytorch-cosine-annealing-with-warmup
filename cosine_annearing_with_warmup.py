@@ -17,8 +17,8 @@ class CosineAnnealingWarmUpRestarts(_LRScheduler):
         self.T_i = T_0
         self.gamma = gamma
         self.cycle = 0
-        super(CosineAnnealingWarmUpRestarts, self).__init__(optimizer, last_epoch)
         self.T_cur = last_epoch
+        super(CosineAnnealingWarmUpRestarts, self).__init__(optimizer, last_epoch)
     
     def get_lr(self):
         if self.T_cur == -1:
