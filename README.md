@@ -1,5 +1,7 @@
 # Cosine Annealing with Warm up for PyTorch
 
+2020/12/22 : update is comming soon...
+
 ## Example
 ```
 >> model = ...
