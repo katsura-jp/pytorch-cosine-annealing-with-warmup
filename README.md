@@ -7,7 +7,7 @@
 ## Args
 - optimizer (Optimizer): Wrapped optimizer.
 - first_cycle_steps (int): First cycle step size.
-- cycle_mult(float): Cycle steps magnification. Default: -1.
+- cycle_mult(float): Cycle steps magnification. Default: 1.
 - max_lr(float): First cycle's max learning rate. Default: 0.1.
 - min_lr(float): Min learning rate. Default: 0.001.
 - warmup_steps(int): Linear warmup step size. Default: 0.
