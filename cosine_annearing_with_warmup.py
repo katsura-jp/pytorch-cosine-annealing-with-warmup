@@ -61,6 +61,8 @@ class CosineAnnealingWarmupRestarts(_LRScheduler):
                     for base_lr in self.base_lrs]
 
     def step(self, epoch=None):
+        if epoch is None and self.last_epoch < 0:
+            epoch = 0
         if epoch is None:
             epoch = self.last_epoch + 1
             self.step_in_cycle = self.step_in_cycle + 1
