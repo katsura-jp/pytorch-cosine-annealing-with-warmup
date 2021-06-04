@@ -4,6 +4,11 @@
 - 2020/12/22 : update is comming soon...
 - 2020/12/24 : Merry Christmas! Release new version, 2.0. previous version is [here (branch: 1.0)](https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup/tree/1.0).
 
+## Installation
+```bash
+pip install 'git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup'
+```
+
 ## Args
 - optimizer (Optimizer): Wrapped optimizer.
 - first_cycle_steps (int): First cycle step size.
@@ -16,6 +21,8 @@
 
 ## Example
 ```
+>> from cosine_annealing_warmup import CosineAnnealingWarmupRestarts
+>>
 >> model = ...
 >> optimizer = optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=1e-5) # lr is min lr
 >> scheduler = CosineAnnealingWarmupRestarts(optimizer,
