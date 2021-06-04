@@ -3,6 +3,7 @@
 ## News
 - 2020/12/22 : update is comming soon...
 - 2020/12/24 : Merry Christmas! Release new version, 2.0. previous version is [here (branch: 1.0)](https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup/tree/1.0).
+- 2021/06/04 : this package can be installed with pip.
 
 ## Args
 - optimizer (Optimizer): Wrapped optimizer.
