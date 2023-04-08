@@ -86,3 +86,5 @@ class CosineAnnealingWarmupRestarts(_LRScheduler):
         self.last_epoch = math.floor(epoch)
         for param_group, lr in zip(self.optimizer.param_groups, self.get_lr()):
             param_group['lr'] = lr
+            
+        self._last_lr = [group['lr'] for group in self.optimizer.param_groups]
